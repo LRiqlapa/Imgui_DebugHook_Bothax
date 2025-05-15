@@ -30,27 +30,27 @@ end
 
 local function DrawMenu()
     if IsMenuVisible == true then
-        ImGui.SetNextWindowSize(ImVec2(520, 365))
+        ImGui.SetNextWindowSize(ImVec2(750, 565))
         if ImGui.Begin('ImGui Packet Debugger', true, (2)) then
             if ImGui.BeginTabBar("pktDebugger") then
 
                 if ImGui.BeginTabItem("Text Packet") then
-                    ImGui.InputTextMultiline("##textPacketText", TextPacket, 999999, ImVec2(500, 300), 16384)
+                    ImGui.InputTextMultiline("##textPacketText", TextPacket, 999999, ImVec2(710, 500), 16384)
                     ImGui.EndTabItem();
                 end
 
                 if ImGui.BeginTabItem("Variant List") then
-                    ImGui.InputTextMultiline("##varlistText", VarlistText, 999999, ImVec2(500, 300), 16384)
+                    ImGui.InputTextMultiline("##varlistText", VarlistText, 999999, ImVec2(710, 500), 16384)
                     ImGui.EndTabItem();
                 end
 
                 if ImGui.BeginTabItem("Raw Packet") then
-                    ImGui.InputTextMultiline("##rawPacketText", RawPacketText, 999999, ImVec2(500, 300), 16384)
+                    ImGui.InputTextMultiline("##rawPacketText", RawPacketText, 999999, ImVec2(710, 500), 16384)
                     ImGui.EndTabItem();
                 end
 
                 if ImGui.BeginTabItem("Incoming Raw Packet") then
-                    ImGui.InputTextMultiline("##incRawPacketText", IncomingRawPacketText, 999999, ImVec2(500, 300), 16384)
+                    ImGui.InputTextMultiline("##incRawPacketText", IncomingRawPacketText, 999999, ImVec2(710, 500), 16384)
                     ImGui.EndTabItem();
                 end
 
